@@ -17,7 +17,7 @@ while True:
         deposito = float(input("Ingresa la cantidad a depositar: "))
         if deposito > 0:
             saldo += deposito
-            print(f"Has depositado ${deposito:.2f}.")
+            print(f"Has depositado ${deposito:}.")
         else:
             print("El monto a depositar debe ser positivo.")
     
@@ -27,7 +27,7 @@ while True:
         if retiro > 0:
             if retiro <= saldo:
                 saldo -= retiro
-                print(f"Has retirado ${retiro:.2f}.")
+                print(f"Has retirado ${retiro:}.")
             else:
                 print("Saldo insuficiente para realizar el retiro.")
         else:
@@ -35,7 +35,7 @@ while True:
     
     elif opcion == "3":
         # Consultar saldo
-        print(f"Tu saldo actual es: ${saldo:.2f}.")
+        print(f"Tu saldo actual es: ${saldo:}.")
     
     elif opcion == "4":
         break
